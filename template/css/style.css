@@ -1,0 +1,813 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+
+header{
+height: 185px;
+width: 100%;
+background-color: white;
+color: black;
+}
+
+.TOPNAV{
+display: block;
+width: 100%;
+height: 40px;
+}
+/*how do i add icon???????????*/
+.TOPNAV a{
+display: block;
+width:8%;
+height: 22px;
+float: left;
+text-decoration: none;
+}
+.TOPNAV button{
+display: block;
+width: 11%;
+height: 20px;
+float: right;
+}
+
+/*SECON NAVIGATION WITH NYTLOGO*/
+.SECONDNAV{
+    display: block;
+    text-align: center;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height:40px;
+    border-top: .1em;
+    border-style: solid;
+    border-bottom: 0em;
+}
+.SECONDNAV a{
+  border-top: .1em;
+  border-style: solid;
+  border-bottom: 0em;
+  height: 20px;
+  margin-top: 1em;
+}
+
+.NYTlogo{
+  display: block;
+  width: 38%;
+  height: 78px;
+  margin-left: 35em;
+}
+
+.LAST-HEADER-NAV   {
+  background-color: white;
+  height: 25px;
+  width: 100%;
+  padding-top: 0px;
+  margin-left: 0px;
+  font-size: 1em;
+  border-bottom: 1px,solid;
+}
+.LAST-HEADER-NAV ul    {
+  padding: 0px;
+height: 25px;
+margin-top: 0px;
+margin-bottom: 0px;
+font-size: 1em;
+border-bottom: 2px;
+float: left;
+border-style: solid;
+border-top: 0px;
+border-right: 0px;
+border-left: 0px;
+}
+.LAST-HEADER-NAV li a    {
+	color: black;
+	background-color: white;
+	font-size: 1em;
+	text-decoration: none;
+	border-right: .1em;
+	margin-right: 16px;
+  margin-top: 0em;
+  float: left;
+}
+.LAST-HEADER-NAV li:first-child {
+	margin-left:10px;
+	border:black;
+  font-size: 1em;
+  margin-top: 0px;
+  float: left;
+
+}
+/*FOURTH NAV*/
+.fourthnav{
+display: block;
+width: 100%;
+height: 20%;
+font-size: 1em;
+border-bottom: 1px;
+  border-style: ridge;
+border-top: 0em;
+border-left: 0em;
+border-right: 0em;
+}
+
+.LONGNAV{
+  margin-left: 50px;
+  display: block;
+  width: 100%;
+  height: 18%;
+  font-size: 1em;
+}
+
+.LONGNAV li a{
+	margin-top: -7px;
+	margin-bottom: 0px;
+  font-size: 1em;
+  text-decoration: none;
+  margin-right:25px;
+  float: left;
+}
+
+.LONGNAV li:first-child {
+	margin-left:10px;
+	border:black;
+  margin-top: 15px;
+  float: left;
+  font-size: 1em;
+}
+
+/* ARTICLES SECTION*/
+
+/* top left side article*/
+.left-section {
+  display: block;
+  width: 50%;
+  height: 600px;
+  color: black;
+  font-size: 1em;
+  margin-left: 82px;
+}
+
+.left-list-chunk{
+  display: block;
+  width: 35%;
+  height: 400px;
+  font-size: 1em;
+margin-left: 0px;}
+
+  .left-list-chunk .left1article1{
+    display: block;
+    width: 100%;
+    height: 65%;
+    font-size: 1em;
+}
+.left-list-chunk .left1article1 h4{
+  display: block;
+  height: 10%;
+  width: 57%;
+  font-size: 1em;
+  font-weight: bold;
+  border-bottom: 3px;
+  border-bottom-style: solid;
+  border-color: lightgrey;
+  margin-top: 11px;
+  margin-left: 0px;
+}
+.left-list-chunk .left1article1 h2{
+display: block;
+height: 15%;
+width: 100%;
+font-size: 2em;
+font-weight: bold;
+margin-top: -9px;
+line-height: 25px;}
+
+.left1article1 span{
+  display: block;
+  font-size: 1em;
+  height: 5%;
+  width: 100%;
+  margin-top: 63px;
+  color:lightgrey;}
+
+  .left1article1 span:last-of-type{
+    display: block;
+  font-size: 1em;
+  height: 5%;
+  width: 27%;
+  margin-top: 3px;
+  color: red;
+  margin-left: 127px;}
+
+.left1article1 ul li{
+  display: list-item;
+  font-size: 1em;
+  width: 100%;
+  height: 25%;
+  margin-left: -27px;
+  margin-top: 6px;}
+  /*end of left article1*/
+
+.left-list-chunk .leftarticle2{
+    display: block;
+    width: 100%;
+    height: 35%;
+    font-size: 1em;}
+
+  .leftarticle2 span{
+      display: block;
+      font-size: 1em;
+      height: 5%;
+      width: 100%;
+      margin-top: 56px;
+      color:black;}
+
+    .leftarticle2 h2{
+        display: block;
+        height: 15%;
+        width: 100%;
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-top: 4px;
+        line-height: 25px;}
+
+        .leftarticle2 h4{
+            display: block;
+            font-size: 1em;
+            height: 15%;
+            width: 100%;
+            margin-top: 63px;
+            color:lightgrey;}
+
+.leftarticle2 span:last-of-type{
+  display: block;
+font-size: 1em;
+height: 5%;
+width: 100%;
+margin-top: 12px;
+color: red;
+margin-left: 80px;}
+
+  .leftarticle2 p{
+display: block;
+font-size: 1em;
+height: 9%;
+width: 72%;
+margin-top: 10px;
+color: black;}
+/*leftsection of left side */
+/*botton left side article*/
+.left-section .left-video {
+    font-size: 1em;
+    float: right;
+    margin-top: -398px;
+    height: 600px;
+    width: 65%;}
+
+.v1{
+  display: block;
+  height:45%;
+  width: 100%
+}
+
+.video{
+  display: block;
+  height: 75%;
+  width: 100%;
+}
+.V1 span{
+  display: block;
+  font-size:.8em;
+  width: 100%;
+  height:5%;
+color: lightgrey;
+text-align: center;}
+
+.V1 p{
+  display: block;
+  font-size: 1em;
+  width: 100%;
+  height: 15%;
+color: black;
+margin-top: 1px;}
+
+/*V1 section ends*/
+.left-video .v2{
+  display: block;
+  height:20%;
+  width: 100%}
+
+  .v2 h2{
+    display: block;
+  height: 10%;
+  width: 100%;
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 22px;  }
+
+.v2 p{
+  display: block;
+  height: 11%;
+  width: 100%;
+  font-size: 1em;
+  color: black;
+  margin-top: -4px; }
+
+      .videonav{
+    margin-left: 50px;
+    display: block;
+    width: 100%;
+    height: 10%;
+    font-size: 1em;
+    margin-top: 31px;
+      }
+
+      .videonav ul{
+        margin-top: -4px;
+  margin-bottom: 0px;
+  font-size: 1em;
+  text-decoration: none;
+  margin-right: 0px;
+  margin-left: -85px;
+      }
+      .videonav li a{
+        margin-top: -7px;
+      margin-bottom: 0px;
+      font-size: 1em;
+      text-decoration: none;
+      margin-right: 13px;
+      float: left;
+      border-right: 2px;
+      border-style: ridge;
+      border-left: 0;
+      border-top: 0;
+      border-color: grey;
+      padding-right: 7px;
+      color: black;
+      border-bottom: 0px;
+      }
+
+
+/*bluesection*/
+.bluesection h2{
+  display: block;
+font-size: 1em;
+width: 100%;
+height: 5%;
+margin-top: -40px;
+font-weight: bold;}
+.bluesection h4{
+  display: block;
+font-size: .8em;
+width: 100%;
+height: 5%;
+color: lightgrey;
+margin-top: -10px;
+}
+
+.bluesection span{
+  display: block;
+  font-size: .8em;
+  width: 100%;
+  height: 5%;
+  color: red;
+  margin-top: -27px;
+  margin-left: 188px;
+}
+.bluesection span:last-of-type{
+  display: block;
+  font-size: .8em;
+  width: 100%;
+  height: 5%;
+  color: blue;
+  margin-left: 0px;
+  margin-top: -11px;
+}
+.bluesection p{
+  display: block;
+  font-size: 1em;
+  width: 60%;
+  height: 15%;
+  color: black;
+  margin-top: 2px;
+}
+.bluesection img{
+  display: block;
+  width: 32%;
+  height: 12%;
+  float: right;
+  margin-top: -96px;
+}
+
+.last-left h2{
+  display: list-item;
+width: 100%;
+height: 5%;
+font-size: .9em;
+font-weight: bold;
+margin-top: 1px;
+}
+
+.last-left span{
+  display: block;
+font-size: .9em;
+width: 17%;
+height: 5%;
+color: red;
+margin-top: -23px;
+margin-left: 269px;
+}
+/*end of left side*/
+.right-section {
+  display: block;
+width: 42%;
+height: 600px;
+color: black;
+font-size: 1em;
+margin-left: 0px;
+float: right;
+margin-top: -45%;
+border-color: lightgrey;
+}
+.right-section h3 {
+
+  display: block;
+  width: 100%;
+  height: 5%;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;}
+
+.rleft1 {
+  display: block;
+  width: 50%;
+  height: 300px;
+  color: black;
+  font-size: 1em;
+  margin-left: 0px;
+  border-right: 1px;
+    border-style: ridge;
+  border-top: 0px;
+  border-style: solid;
+  border-left: 1px;
+  border-style: ridge;
+  border-bottom: 0px;
+  padding-left: 17px;
+}
+
+.rleftsec1 span{
+  display: block;
+  width: 70%;
+  height: 5%;
+  color: grey;
+  font-size: 1em;
+  margin-top: -13px;
+}
+.rleftsec1 h2{
+  display: block;
+  width: 50%;
+  height: 5%;
+  color:black;
+  font-size: 1em;
+  margin-top: -2px;
+}
+.rleftsec1 p{
+  display: block;
+  width: 42%;
+  height: 15%;
+  color: black;
+  font-size: 1em;
+  margin-top: -10px;
+}
+
+.rleftsec1 img{
+  display: block;
+  float: right;
+  width: 40%;
+  height: 15%;
+  margin-top: -74px;
+}
+/*end of rleftsec1 image needs to be aligned to the right */
+
+.rleftsec2 span{
+  display:   block;
+  width: 70%;
+  height: 5%;
+  color:grey;
+  font-size: .8em;
+}
+.rleftsec2 h2{
+  display: block;
+  width: 70%;
+  height: 5%;
+  color:black;
+  font-size: 1em;
+  margin-top: -1px;
+}
+.rleftsec2 span:last-of-type{
+  display:   block;
+  width: 50%;
+  height: 5%;
+  color:lightgrey;
+  font-size: .8em;
+  margin-top: -10px;
+}
+.rleftsec2 p{
+  display: block;
+  width: 50%;
+  height: 15%;
+  color:black;
+  font-size: 1em;
+  margin-top: 0px;
+}
+.rleftsec2 img{
+  display: block;
+  float: right;
+  width: 40%;
+  height: 15%;
+  margin-top: -27%;
+
+}
+/*end of .rleftsec2 img needs aligment*/
+.rleftsec3{
+  display: list-item;
+  width: 70%;
+  height: 15%;
+  color:black;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/*rights side of left side*/
+
+.right-section .rright {
+    display: block;
+    width: 48%;
+    height: 300px;
+    color: black;
+    font-size: 1em;
+    margin-left: 0px;
+    margin-top: -54%;
+    float: right;
+}
+.rright1 {
+    display: block;
+    width: 100%;
+    height: 15%;
+    color: black;
+    font-size: 1em;
+    margin-left: 0px;
+}
+.rright1 h2 {
+  display: block;
+  width: 66%;
+  height: 10%;
+  color: black;
+  font-size: 1em;
+  margin-left: 0px;
+  font-weight: bold;
+}
+.rright1 p{
+  display: block;
+width: 45%;
+height: 20%;
+color: black;
+font-size: 1em;
+margin-left: 0px;
+margin-top: 9%;}
+
+.rright1 img{
+  display: block;
+  float: right;
+  width: 40%;
+  height: 15%;
+  margin-top: -8%;}
+.rright2 {
+    display: block;
+    width: 100%;
+    height: 15%;
+    color: black;
+    font-size: 1em;
+    margin-left: 0px;
+    margin-top: 25%;
+}
+.rright2 span {
+  display: block;
+  width: 100%;
+  height: 5%;
+  color: lightgrey;
+  font-size: 1em;
+  margin-left: 0px;
+  margin-top: -3%;
+}
+.rright2 h2 {
+    display: block;
+    width: 75%;
+    height: 5%;
+    color: black;
+    font-size: 1em;
+    margin-left: 0px;
+    font-weight: bold;
+    margin-top: 5%;
+}
+.rright2 p{
+    display: block;
+    width: 45%;
+    height: 15%;
+    color: black;
+    font-size: 1em;
+    margin-left: 0px;
+    margin-top: 10%;
+}
+.rright2 img{
+  display: block;
+  float: right;
+  width: 40%;
+  height: 15%;
+  margin-top: -7%;}
+
+  .rright3{
+    display: block;;
+    width: 75%;
+    height: 5%;
+    color: black;
+    font-size: 1em;
+    margin-left: 0px;
+    font-weight: bold;
+    margin-top: 29%;
+  }
+.rright3 ul li{
+  display: list-item;
+}
+/*image missing*/
+.bottom{
+  display: block;
+  height:40%;
+  width:100%
+}
+.bottom1{
+  display: block;
+  width: 100%;
+  height:30%;
+  border-top: 1px;
+    border-style: ridge;
+  border-bottom: 1px;
+    border-style: ridge;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: ridge;
+}
+.bottoma{
+  display: block;
+  width: 45%;
+  height:100%;
+  padding-left: 14px;
+}
+.bottoma p{
+  font-weight: bold;
+}
+.bottoma h3{
+  font-weight:normal;
+  text-align: left;
+}
+.bottomb{
+  display: block;
+  width: 50%;
+  height: 100%;
+  float: right;
+  margin-top: -14%;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-left: 1px;
+  border-style: ridge;
+  border-right: 0px;
+  border-style: ridge;
+  padding-left: 14px;
+}
+.bottomb p{
+  font-weight: bold;
+}
+
+.bottomb h3{
+  font-weight:normal;
+  margin-left: 0%;
+  text-align: left;
+}
+
+.bottom2{
+  display: block;
+  width: 100%;
+  height:35%;
+  border-top: 0px;
+  border-bottom: 1px;
+    border-style: ridge;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: ridge;
+}
+.bottom2 p{
+  display: block;
+  width: 50%;
+  height:30%;
+  margin-left: 8%;
+  margin-top: -2%;
+}
+.bottom2 img{
+  display: block;
+  width: 40%;
+  height:20%;
+  float: right;
+  margin-top: -3%;
+}
+.bottom3{
+  display: block;
+  width: 100%;
+  height:35%;
+  border-top: 0px;
+  border-bottom: 1px;
+    border-style: ridge;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: ridge;
+}
+.bottom3 p{
+  display: block;
+  width: 50%;
+  height:30%;
+  margin-left: 8%;
+margin-top: -1%;}
+
+.bottom3 img{
+  display: block;
+  width: 40%;
+  height:20%;
+  float: right;
+  margin-top: -5%;
+}
